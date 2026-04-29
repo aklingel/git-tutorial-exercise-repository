@@ -24,8 +24,14 @@ def list_tasks(tasks):
         print(f"{i}. {task}")
 
 
+def remove_task(tasks, index):
+    tasks.pop(index - 1)
+
+
 if __name__ == "__main__":
     tasks = []
     add_task(tasks, "Buy groceries")
     add_task(tasks, "Write unit tests")
+    list_tasks(tasks)
+    remove_task(tasks, 1)
     list_tasks(tasks)
