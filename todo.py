@@ -4,7 +4,7 @@ class Task:
         self.done = done
 
     def __str__(self):
-        status = "x" if self.done else " "
+        status = "✓" if self.done else " "
         return f"[{status}] {self.title}"
 
 
