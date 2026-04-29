@@ -12,6 +12,10 @@ def add_task(tasks, title):
     tasks.append(Task(title))
 
 
+def complete_task(tasks, index):
+    tasks[index - 1].done = True
+
+
 def list_tasks(tasks):
     if not tasks:
         print("No tasks.")
