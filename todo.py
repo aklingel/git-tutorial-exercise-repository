@@ -29,3 +29,5 @@ if __name__ == "__main__":
     add_task(tasks, "Buy groceries")
     add_task(tasks, "Write unit tests")
     list_tasks(tasks)
+    remove_task(tasks, 1)
+    list_tasks(tasks)
